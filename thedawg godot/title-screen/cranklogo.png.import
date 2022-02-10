@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cranklogo.png-cf9a8daf31088da3a5334c7e988870cf.stex"
+path="res://.import/cranklogo.png-4d30d461df2bde1bfa9e08df2e921647.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://title-screen-elements/cranklogo.png"
-dest_files=[ "res://.import/cranklogo.png-cf9a8daf31088da3a5334c7e988870cf.stex" ]
+source_file="res://title-screen/cranklogo.png"
+dest_files=[ "res://.import/cranklogo.png-4d30d461df2bde1bfa9e08df2e921647.stex" ]
 
 [params]
 

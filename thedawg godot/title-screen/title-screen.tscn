@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://title-screen/title-screen.gd" type="Script" id=1]
+[ext_resource path="res://title-screen/cranklogo.png" type="Texture" id=2]
+
+[node name="title-screen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="logo" type="TextureRect" parent="."]
+margin_left = 79.0
+margin_top = 80.0
+margin_right = 488.0
+margin_bottom = 147.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menuBtns" type="VBoxContainer" parent="."]
+margin_left = 100.0
+margin_top = 378.0
+margin_right = 160.0
+margin_bottom = 674.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playBtn" type="Button" parent="menuBtns"]
+margin_right = 60.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 241, 40 )
+text = "play"
+align = 0
+
+[node name="optionBtns" type="Button" parent="menuBtns"]
+margin_top = 24.0
+margin_right = 60.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 241, 40 )
+text = "options"
+align = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="exitBtn" type="Button" parent="menuBtns"]
+margin_top = 48.0
+margin_right = 60.0
+margin_bottom = 68.0
+rect_pivot_offset = Vector2( 241, 40 )
+text = "exit"
+align = 0
+
+[connection signal="pressed" from="menuBtns/playBtn" to="." method="_on_playBtn_pressed"]
+[connection signal="pressed" from="menuBtns/optionBtns" to="." method="_on_optionBtns_pressed"]
+[connection signal="pressed" from="menuBtns/exitBtn" to="." method="_on_exitBtn_pressed"]

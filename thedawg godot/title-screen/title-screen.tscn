@@ -1,12 +1,74 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://title-screen/title-screen.gd" type="Script" id=1]
-[ext_resource path="res://title-screen/cranklogo.png" type="Texture" id=2]
+[ext_resource path="res://title-screen/goldLogo.png" type="Texture" id=2]
+[ext_resource path="res://title-screen/shadow.png" type="Texture" id=3]
+[ext_resource path="res://background-gifs/pandaGirlSpriteSheet.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 623, 369 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 623, 0, 623, 369 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1246, 0, 623, 369 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1869, 0, 623, 369 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2492, 0, 623, 369 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 369, 623, 369 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 623, 369, 623, 369 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Theme" id=9]
 
 [node name="title-screen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="AnimatedSprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 2.055, 1.95 )
+frames = SubResource( 8 )
+frame = 3
+playing = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -34,6 +96,7 @@ __meta__ = {
 margin_right = 60.0
 margin_bottom = 20.0
 rect_pivot_offset = Vector2( 241, 40 )
+theme = SubResource( 9 )
 text = "play"
 align = 0
 
@@ -56,6 +119,8 @@ rect_pivot_offset = Vector2( 241, 40 )
 text = "exit"
 align = 0
 
+[connection signal="ready" from="background" to="." method="_on_background_ready"]
+[connection signal="ready" from="logo" to="." method="_on_logo_ready"]
 [connection signal="pressed" from="menuBtns/playBtn" to="." method="_on_playBtn_pressed"]
 [connection signal="pressed" from="menuBtns/optionBtns" to="." method="_on_optionBtns_pressed"]
 [connection signal="pressed" from="menuBtns/exitBtn" to="." method="_on_exitBtn_pressed"]

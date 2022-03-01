@@ -21,6 +21,7 @@ var fiveGtower = bgs.new("5gtower",500,692)
 var pandaGirl = bgs.new("pandaGirl",623,369)
 var pizzaCity = bgs.new("pizzacity",480,270)
 var buddah = bgs.new("buddah",500,700)
+var ghostly = bgs.new("ghostly",1280,720)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -49,7 +50,7 @@ func _on_exitBtn_pressed():
 func _on_background_ready():
 	var viewportWidth = get_viewport().size.x
 	var viewportHeight = get_viewport().size.y
-	var backgrounds = [fiveGtower,pandaGirl,pizzaCity,buddah]
+	var backgrounds = [fiveGtower,pandaGirl,pizzaCity,buddah,ghostly]
 	rng.randomize()
 	var item = backgrounds[rng.randi_range(0,backgrounds.size()-1)]
 	print(item.name())
@@ -59,7 +60,7 @@ func _on_background_ready():
 	
 
 func _on_logo_ready():
-	var logos = ["cranklogo","goldlogo","chowderLogo"]
+	var logos = ["cranklogo","goldlogo","chowderLogo","cowlogo","dirtlogo","emeraldlogo","ghostlylogo","lavalogo","pokemondialogo"]
 	rng.randomize()
 	var item = logos[rng.randi_range(0,logos.size()-1)]
 	get_node("logo").texture = load("res://title-screen/"+item+".png")

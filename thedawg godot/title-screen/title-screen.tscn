@@ -2232,7 +2232,7 @@ position = Vector2( 640, 360 )
 scale = Vector2( 2.055, 1.95 )
 frames = SubResource( 8 )
 animation = "coastalcity"
-frame = 26
+frame = 33
 playing = true
 
 [node name="TextureRect" type="TextureRect" parent="."]

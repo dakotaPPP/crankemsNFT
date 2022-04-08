@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/cart2.2.png-2f2fbe39ab7c3a72cad71236af32872d.res"
+
+[deps]
+
+source_file="res://play-screen/cart2.2.png"
+dest_files=[ "res://.import/cart2.2.png-2f2fbe39ab7c3a72cad71236af32872d.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

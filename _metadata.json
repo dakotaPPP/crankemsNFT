@@ -1,0 +1,364 @@
+[
+  {
+    "name": "Crankies #1",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/1.png",
+    "custom_fields": {
+      "dna": "123ab9697141c132631f9032171f68077f4b6757",
+      "edition": 1,
+      "date": 1645030449635,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "calmred"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "green"
+      },
+      {
+        "trait_type": "piercing(1)",
+        "value": "silver"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "TNM"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "cliff"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #2",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/2.png",
+    "custom_fields": {
+      "dna": "7d548636df15d11a3e3aceba4c17c000fab53b25",
+      "edition": 2,
+      "date": 1645030449652,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "silver"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "blue"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "TNM"
+      },
+      {
+        "trait_type": "eyewear",
+        "value": "blue lasers"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "subreme"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #3",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/3.png",
+    "custom_fields": {
+      "dna": "f304e1570aa75c2032b8ab861348383034c877ee",
+      "edition": 3,
+      "date": 1645030449668,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "coolgrey"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "blue"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "TNM"
+      },
+      {
+        "trait_type": "eyewear",
+        "value": "red lasers"
+      },
+      {
+        "trait_type": "earwear",
+        "value": "jahpods"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "subreme"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #4",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/4.png",
+    "custom_fields": {
+      "dna": "96d83ef3d1efdececc2e8aa72b34b0a418967e6d",
+      "edition": 4,
+      "date": 1645030449684,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "skyblue"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "green"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "eye hat"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "shirtless"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #5",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/5.png",
+    "custom_fields": {
+      "dna": "0aeb155a937317a764490360c7275422fd35c14f",
+      "edition": 5,
+      "date": 1645030449699,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "chillpurple"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "green"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "TNM"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "shirtless"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #6",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/6.png",
+    "custom_fields": {
+      "dna": "f7eed5ff09015acdf526753966772aea36a5d19e",
+      "edition": 6,
+      "date": 1645030449710,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "lightyellow"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "brown"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "eye hat"
+      },
+      {
+        "trait_type": "earwear",
+        "value": "jahpods"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "cliff"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #7",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/7.png",
+    "custom_fields": {
+      "dna": "f7711800289c0dd7a4c24e50a9de13e5c147512a",
+      "edition": 7,
+      "date": 1645030449726,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "armygreen"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "brown"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "eye hat"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "cliff"
+      },
+      {
+        "trait_type": "blush",
+        "value": "blush"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #8",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/8.png",
+    "custom_fields": {
+      "dna": "91def34c66adb8a283fc420d162034af14a109ff",
+      "edition": 8,
+      "date": 1645030449740,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "brickbackground"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "brown"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "TNM"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "cliff"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #9",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/9.png",
+    "custom_fields": {
+      "dna": "ce2935a68c92cd0127a6ce0c410c3c2ad7c22e8a",
+      "edition": 9,
+      "date": 1645030449751,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "lightyellow"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "tired"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "bald"
+      },
+      {
+        "trait_type": "eyewear",
+        "value": "blue lasers"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "shirtless"
+      }
+    ]
+  },
+  {
+    "name": "Crankies #10",
+    "description": "Collection for NFTs related to the crankem game",
+    "file_url": "ipfs://NewUriToReplace/10.png",
+    "custom_fields": {
+      "dna": "4038b9955439f74153a380bd4de26b84b3067cb4",
+      "edition": 10,
+      "date": 1645030449762,
+      "compiler": "HashLips Art Engine"
+    },
+    "attributes": [
+      {
+        "trait_type": "background",
+        "value": "apegreen"
+      },
+      {
+        "trait_type": "base",
+        "value": "generic"
+      },
+      {
+        "trait_type": "eyes",
+        "value": "green"
+      },
+      {
+        "trait_type": "headwear",
+        "value": "TNM"
+      },
+      {
+        "trait_type": "eyewear",
+        "value": "blue lasers"
+      },
+      {
+        "trait_type": "shirt",
+        "value": "subreme"
+      }
+    ]
+  }
+]

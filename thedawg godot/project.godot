@@ -8,11 +8,25 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "GlobalClass",
+"language": "GDScript",
+"path": "res://global.gd"
+} ]
+_global_script_class_icons={
+"GlobalClass": ""
+}
+
 [application]
 
 config/name="Thedawg"
 run/main_scene="res://title-screen/title-screen.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://global.gd"
 
 [display]
 

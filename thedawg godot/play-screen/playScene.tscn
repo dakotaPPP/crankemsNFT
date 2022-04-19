@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://play-screen/meadow.png" type="Texture" id=1]
 [ext_resource path="res://play-screen/cartUnclicked.png" type="Texture" id=2]
@@ -6,8 +6,6 @@
 [ext_resource path="res://play-screen/cart2.2.png" type="BitMap" id=4]
 [ext_resource path="res://play-screen/cartPressed.png" type="Texture" id=5]
 [ext_resource path="res://play-screen/playScene.gd" type="Script" id=6]
-[ext_resource path="res://play-screen/TextureButton.gd" type="Script" id=7]
-[ext_resource path="res://play-screen/KinematicBody2D.gd" type="Script" id=8]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.994536 )
@@ -21,6 +19,55 @@ colors = PoolColorArray( 0.222656, 0.222656, 0.222656, 1, 0.339844, 0.339844, 0.
 
 [sub_resource type="GradientTexture" id=4]
 gradient = SubResource( 3 )
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "buttonDown"
+length = 0.01
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.01 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 10 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "buttonUp"
+length = 0.05
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.03, 0.05 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 15 ), Vector2( 0, -5 ), Vector2( 0, 0 ) ]
+}
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 6 )
@@ -73,21 +120,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 78, 544 )
-script = ExtResource( 8 )
+[node name="button1" type="Node2D" parent="."]
 
-[node name="TextureButton" type="TextureButton" parent="KinematicBody2D"]
-margin_right = 180.0
-margin_bottom = 127.0
+[node name="TextureButton" type="TextureButton" parent="button1"]
+margin_left = 78.0
+margin_top = 544.0
+margin_right = 258.0
+margin_bottom = 671.0
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 3 )
 texture_click_mask = ExtResource( 4 )
 expand = true
-script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="button_down" from="KinematicBody2D/TextureButton" to="." method="_on_TextureButton_button_down"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="button1"]
+root_node = NodePath("../TextureButton")
+anims/RESET = SubResource( 5 )
+anims/buttonDown = SubResource( 6 )
+anims/buttonUp = SubResource( 7 )
+
+[connection signal="button_down" from="button1/TextureButton" to="." method="_on_TextureButton_button_down"]
+[connection signal="button_up" from="button1/TextureButton" to="." method="_on_TextureButton_button_up"]

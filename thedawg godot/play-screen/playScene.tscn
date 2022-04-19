@@ -144,3 +144,5 @@ anims/buttonUp = SubResource( 7 )
 
 [connection signal="button_down" from="button1/TextureButton" to="." method="_on_TextureButton_button_down"]
 [connection signal="button_up" from="button1/TextureButton" to="." method="_on_TextureButton_button_up"]
+[connection signal="mouse_entered" from="button1/TextureButton" to="." method="_on_TextureButton_mouse_entered"]
+[connection signal="mouse_exited" from="button1/TextureButton" to="." method="_on_TextureButton_mouse_exited"]

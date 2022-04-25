@@ -20,3 +20,11 @@ func _on_TextureButton_mouse_exited():
 func _on_TextureButton_mouse_entered():
 	mouseOver = true
 	print("hello mom")
+
+
+func _on_pvp_button_down():
+	get_node("pvp/AnimationPlayer").set_current_animation("buttonDown")
+
+
+func _on_pvp_button_up():
+	get_node("pvp/AnimationPlayer").set_current_animation("buttonUp")

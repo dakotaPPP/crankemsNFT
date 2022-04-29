@@ -1,19 +1,45 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _on_button_button_down():
+	get_node("option1/AnimationPlayer").set_current_animation("buttonDown")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_button_button_up():
+	get_node("option1/AnimationPlayer").set_current_animation("buttonUp")
+
+
+func _on_button2_button_down():
+	get_node("option2/AnimationPlayer").set_current_animation("buttonDown")
+	
 
 
 
+func _on_button2_button_up():
+	get_node("option2/AnimationPlayer").set_current_animation("buttonUp")
+
+
+func _on_button3_button_down():
+	get_node("option3/AnimationPlayer").set_current_animation("buttonDown")
+
+
+func _on_button3_button_up():
+	get_node("option3/AnimationPlayer").set_current_animation("buttonUp")
+
+
+func _on_button4_button_down():
+	get_node("option4/AnimationPlayer").set_current_animation("buttonDown")
+
+
+func _on_button4_button_up():
+	get_node("option4/AnimationPlayer").set_current_animation("buttonUp")
+
+
+func _on_button5_button_down():
+	get_node("option5/AnimationPlayer").set_current_animation("buttonDown")
+
+
+func _on_button5_button_up():
+	get_node("option5/AnimationPlayer").set_current_animation("buttonUp")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://play-screen/meadow.png" type="Texture" id=1]
 [ext_resource path="res://play-screen/cartUnclicked.png" type="Texture" id=2]
@@ -11,6 +11,9 @@
 [ext_resource path="res://play-screen/pvpnormal.png" type="Texture" id=9]
 [ext_resource path="res://play-screen/pvppressed.png" type="Texture" id=10]
 [ext_resource path="res://play-screen/pvphover.png" type="Texture" id=11]
+[ext_resource path="res://play-screen/backbuttonhover.png" type="Texture" id=12]
+[ext_resource path="res://play-screen/backbuttonnormal.png" type="Texture" id=13]
+[ext_resource path="res://play-screen/backbuttonpressed.png" type="Texture" id=14]
 
 [sub_resource type="Animation" id=5]
 length = 0.001
@@ -45,6 +48,73 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=7]
+resource_name = "buttonUp"
+length = 0.05
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.03, 0.05 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 15 ), Vector2( 0, -5 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="BitMap" id=12]
+data = {
+"data": PoolByteArray(  ),
+"size": Vector2( 0, 0 )
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:texture_click_mask")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ SubResource( 12 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "buttonDown"
+length = 0.01
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.01 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 10 ) ]
+}
+
+[sub_resource type="Animation" id=15]
 resource_name = "buttonUp"
 length = 0.05
 step = 0.01
@@ -178,6 +248,29 @@ anims/RESET = SubResource( 5 )
 anims/buttonDown = SubResource( 6 )
 anims/buttonUp = SubResource( 7 )
 
+[node name="backbutton1" type="Node2D" parent="."]
+
+[node name="back1" type="TextureButton" parent="backbutton1"]
+margin_left = 16.0
+margin_top = 94.0
+margin_right = 56.0
+margin_bottom = 134.0
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 14 )
+texture_hover = ExtResource( 12 )
+texture_click_mask = SubResource( 12 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="backbutton1"]
+root_node = NodePath("../back1")
+anims/RESET = SubResource( 13 )
+anims/buttonDown = SubResource( 14 )
+anims/buttonUp = SubResource( 15 )
+
 [node name="pvp" type="Node2D" parent="."]
 
 [node name="pvp" type="TextureButton" parent="pvp"]
@@ -204,5 +297,9 @@ anims/buttonUp = SubResource( 10 )
 [connection signal="button_up" from="button1/TextureButton" to="." method="_on_TextureButton_button_up"]
 [connection signal="mouse_entered" from="button1/TextureButton" to="." method="_on_TextureButton_mouse_entered"]
 [connection signal="mouse_exited" from="button1/TextureButton" to="." method="_on_TextureButton_mouse_exited"]
+[connection signal="button_down" from="backbutton1/back1" to="." method="_on_TextureButton_button_down"]
+[connection signal="button_up" from="backbutton1/back1" to="." method="_on_TextureButton_button_up"]
+[connection signal="mouse_entered" from="backbutton1/back1" to="." method="_on_TextureButton_mouse_entered"]
+[connection signal="mouse_exited" from="backbutton1/back1" to="." method="_on_TextureButton_mouse_exited"]
 [connection signal="button_down" from="pvp/pvp" to="." method="_on_pvp_button_down"]
 [connection signal="button_up" from="pvp/pvp" to="." method="_on_pvp_button_up"]

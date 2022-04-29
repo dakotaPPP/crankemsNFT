@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://play-screen/meadow.png" type="Texture" id=1]
 [ext_resource path="res://play-screen/cartUnclicked.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://play-screen/gradient1.png" type="Texture" id=7]
 [ext_resource path="res://play-screen/gradient2.png" type="Texture" id=8]
 [ext_resource path="res://play-screen/pvpnormal.png" type="Texture" id=9]
+[ext_resource path="res://play-screen/pvppressed.png" type="Texture" id=10]
+[ext_resource path="res://play-screen/pvphover.png" type="Texture" id=11]
 
 [sub_resource type="Animation" id=5]
 length = 0.001
@@ -184,8 +186,8 @@ margin_top = 547.0
 margin_right = 507.0
 margin_bottom = 674.0
 texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 3 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 11 )
 texture_click_mask = ExtResource( 4 )
 expand = true
 __meta__ = {

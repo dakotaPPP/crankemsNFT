@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/backbuttonmask2.2.png-f39947b90147576378b9901ec1067d42.res"
+
+[deps]
+
+source_file="res://play-screen/backbuttonmask2.2.png"
+dest_files=[ "res://.import/backbuttonmask2.2.png-f39947b90147576378b9901ec1067d42.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

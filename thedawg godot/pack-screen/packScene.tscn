@@ -278,6 +278,13 @@ anims/RESET = SubResource( 1 )
 anims/buttonDown = SubResource( 2 )
 anims/buttonUp = SubResource( 3 )
 
+[node name="TextureRect" type="TextureRect" parent="option1"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="option2" type="Node2D" parent="."]
 
 [node name="button2" type="TextureButton" parent="option2"]

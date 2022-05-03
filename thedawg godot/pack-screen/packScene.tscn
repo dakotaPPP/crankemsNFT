@@ -1,6 +1,7 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://pack-screen/161519-pixel-art-pixelated-nature-landscape-pixels-digital-art-trees-mountains-path-stones-hill-river-field-grass.jpg" type="Texture" id=1]
+[ext_resource path="res://pack-screen/packart/greypackWoutline.png" type="Texture" id=2]
 [ext_resource path="res://pack-screen/pack_scene.gd" type="Script" id=3]
 [ext_resource path="res://pack-screen/normal effect.png" type="Texture" id=4]
 [ext_resource path="res://pack-screen/normal2 effect.png" type="Texture" id=5]
@@ -279,8 +280,13 @@ anims/buttonDown = SubResource( 2 )
 anims/buttonUp = SubResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="option1"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 70.0
+margin_top = 240.0
+margin_right = 969.0
+margin_bottom = 1840.0
+rect_scale = Vector2( 0.2, 0.2 )
+mouse_filter = 2
+texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
